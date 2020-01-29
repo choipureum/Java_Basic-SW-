@@ -1,0 +1,14 @@
+JDK, Java Development kit
+-자바 개발 도구(javac)
+-자바언어를 이용해서 프로그램을 개발하기 위한 API와 환경을 구성하는 프로그램
+JRE, Java Runtime Environment
+-자바 실행 환경(java)
+-자바 프로그램이 실행되기 위해 필요한 환경
+
++API, Application Programming Interface
+프로그램을 개발하기 위해 준비된 코드들
+
+-------
+OpenJdk 1.8 API Documentation -자바 소스 설명
+Oracle Java 8 API Documentation-자바 공식 소스 설명
+-------
