@@ -96,7 +96,56 @@ public class ArrayQuiz_02 {
 		System.out.println(ret_arr);
 		
 		//4번 Array로 풀기?
+		int [] over_arr=new int[10];
+		int [] ret_arr=new int[10];
+		int sw=1;
+		int temp=0;
+		//over_arr구하기
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<arr.length;j++) {
+				if(arr[i]==arr[j] &&i!=j) {
+					for(int k=0;k<over_arr.length;k++) {
+						if(over_arr[k]==arr[i]) {
+							sw=0;
+						}
+					}
+					if(sw==1) {
+						over_arr[temp]=arr[i];
+						temp++;
+					}
+				}
+				sw=1;
+			}
+		}
+		temp=0; 
+		//ret_arr구하기
+		for(int i=0;i<arr.length;i++) {
+			for(int j=0;j<over_arr.length;j++) {
+				if(arr[i]==over_arr[j]) {
+					sw=0;
+					break;
+				}				
+			}
+			if(sw==1) {
+			ret_arr[temp]=arr[i];
+			temp++;
 		
+		}	sw=1;
+		}
+		//정렬, 반환
+		Arrays.sort(over_arr);
+		Arrays.sort(ret_arr);
+		for(int i=0;i<10;i++) {
+			if(over_arr[i]!=0) {
+				System.out.print(over_arr[i]+" ");
+			}
+		}
+		System.out.println();
+		for(int i=0;i<10;i++) {
+			if(ret_arr[i]!=0) {
+				System.out.print(ret_arr[i]+" ");
+			}
+		}
 		
 }
 }
