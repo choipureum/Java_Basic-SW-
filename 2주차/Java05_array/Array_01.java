@@ -22,7 +22,10 @@ public class Array_01 {
 	    }
 	    //arr[5]=60;
 	    //ArrayIndexOutOfBoundsException -->배열의 범위를 벗어난 공간에 수를 대입하려고 시도하면 예외발생
-		System.out.println(Arrays.toString(arr));
+	    System.out.println(arr); //I@2a139a55 -->참조값 : Int형 5개짜리 배열공간에 대표 주소값이 표시
+	    //배열의 이름은 메모리에 배열이 생성된 위치(주소,참조)를 나타냄 // ->참조값, Reference
+ 		System.out.println(Arrays.toString(arr));
+		System.out.println("------------------------");
 	}
 }
 //<배열의 선언>
