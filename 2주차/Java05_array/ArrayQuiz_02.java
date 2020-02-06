@@ -68,7 +68,7 @@ public class ArrayQuiz_02 {
 		System.out.println(Arrays.toString(rank));
 
 		
-		//4번(배열로 어케푸노?) --ArrayList로 풀었네	
+		//4번(배열로 어케푸노?) --ArrayList로 풀었네(1)	
 		ArrayList over_arr= new ArrayList<>(); 
 		ArrayList ret_arr= new ArrayList<>(); 
 		int sw=0;
@@ -95,7 +95,7 @@ public class ArrayQuiz_02 {
 		System.out.println(over_arr);
 		System.out.println(ret_arr);
 		
-		//4번 Array로 풀기?
+		//4번 Array로 풀기-우욱(2)
 		int [] over_arr=new int[10];
 		int [] ret_arr=new int[10];
 		int sw=1;
