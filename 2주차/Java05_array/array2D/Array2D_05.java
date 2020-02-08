@@ -39,5 +39,6 @@ public class Array2D_05 {
 			//동적으로 과목수를 변환시켜 대입해준다
 		}
 		System.out.println(Arrays.deepToString(score)); //공간확인해보세요
+		
 	}
 }
