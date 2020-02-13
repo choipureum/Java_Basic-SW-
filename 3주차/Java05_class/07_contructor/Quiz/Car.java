@@ -24,3 +24,23 @@ public class Car {
 		this.color = color;
 	}
 }
+//---------------
+//class Car
+//---------------
+//- model : String
+//- String color
+//---------------
+//<<constructor>>
+//+ Car(String,String)
+//
+//<<method>>
+//+ display() : void
+//
+//<<setter>>
+//+ setModel(String model) : void
+//+ setColor(String color) : void
+//
+//<<getter>>
+//+ getModel() : String
+//+ getColor() : String
+//---------------
