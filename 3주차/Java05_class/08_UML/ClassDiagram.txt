@@ -1,0 +1,44 @@
+< 클래스 다이어그램, Class Diagram >
+ -프로그램 설계 시 글래스의 형태, 구조, 클래스간의 관계 등을 그림으로 표현한 것
+ -시스템의 논리적인 구조를 표현한 다이어그램
+	** 시스템의 논리적 구조 = 클래스의 구조 + 클래스들 간의 관계
+ -구성 :---------------
+	| 클래스 이름 |
+	---------------
+	| 멤버 필드   |
+	---------------
+	| 멤버 메소드 |
+	---------------
+-접근제한자 표현 기호 :
+
+  + : public
+  # : protected
+  ~ : default
+  - : private
+
+   ex)멤버필드 표기 예시
+	private String name;  --> - name : String
+	public int num;	      --> + num : int
+	double height;        --> ~ height : double
+   ex)멤버메소드 표기 예시
+	public String getName(){}		-->  + getName() : String
+	private double display(int n1, int n2){}-->  - display(int,int) : double  -->매개변수 이름을 적어도되고 안적어도 되고
+
+ -스테레오 타입, streotype
+	+특수한 기능을 수행함을 표현하는 것
+	<<override>>처럼  <<>>를 이용하여 표현한다
+
+	ex) 주석처럼 사용함
+	   <<constructor>>
+	    +Person()
+
+           <<getter>>
+	   <<setter>>
+	   <<final>> : 상수로 표현할때
+	   <<readOnly>> : 읽기전용 		
+
+
+
+
+
+
