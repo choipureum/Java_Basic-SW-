@@ -14,9 +14,17 @@ public class StudentService_ver2 {
 		stuArr[2]=new Student();
 	}
 	
-	private int getIdx() {		
-		return sc.nextInt();
-	}	
+	private int getIdx() {	
+		int idx;
+		do {
+			System.out.print("몇번째학생? ");
+			idx = sc.nextInt();
+			if(idx<1 || idx>3)
+				System.out.println(" >> Error : 3명만 존재합니다");
+		} while(idx<1 || idx>3);
+		
+		return idx;
+	}		
 	public void insertInfo(Student [] stuArr,int select) {
 			System.out.print(select+"학생 이름 : ");
 			stuArr[select-1].setName(sc.next());
