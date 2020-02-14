@@ -8,7 +8,8 @@ public class StudentService {
 	
 	
 	public StudentService() {
-		
+		//sc = new Scanner(System.in);
+		//stu=new Student(); 여기서 초기화해도 
 	}
 	public void insertInfo() {
 			System.out.print("이름 : ");
