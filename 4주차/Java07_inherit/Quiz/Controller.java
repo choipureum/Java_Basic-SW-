@@ -25,10 +25,12 @@ public class controller {
 			int x=(int)(Math.random()*100);
 			int y=(int)(Math.random()*100);
 			p[i]=new Point(x,y);	
-			c[i]=new Circle(x,y,(int)(Math.random()*100));
-			r[i]=new Rectangle(x,y,(int)(Math.random()*100),(int)(Math.random()*10)) ;		
-			c[i].draw();
-			r[i].draw();
+			p[0]=new Point(x,y);	
+			p[1]=new Circle(x,y,(int)(Math.random()*100));
+			p[2]=new Rectangle(x,y,(int)(Math.random()*100),(int)(Math.random()*10)) ;		
+			p[0].draw();
+			p[1].draw();
+			p[2].draw();
 			
 		}	
 	}
