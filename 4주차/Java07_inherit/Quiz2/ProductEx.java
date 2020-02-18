@@ -52,6 +52,11 @@ public class ProductEx {
 		p.sell();
 		p.sell();
 	
+		
+		System.out.println("------추상화클래스 Product------");
+//		Product p = new Product("data",123); //추상화 클래스라서 에러발생(객체 생성 불가)
+		Product p0; //추상클래스여도 객체 변수는 선언가능
+		p0=new Tv("d1",123); //몸체는 받을 수 있다
 	}
 }
 
