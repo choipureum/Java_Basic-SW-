@@ -59,6 +59,7 @@ public class Array implements ArrayAction {
 			}
 			else if(i>Idx) {
 				arr[i-1]=arr[i];
+				arr[i]=null;
 			}
 		}
 		cnt--;
