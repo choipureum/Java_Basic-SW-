@@ -1,0 +1,12 @@
+
+< 클래스 다이어그램 자동화 도구 >
+
+help 메뉴 - Install New Software 선택
+add...버튼 클릭
+Name과 URL적용
+Name : ObjectAid UML Explorer
+URL : http://www.objectaid.com/update/current
+
+Add 클릭
+
+objectAid UML Explorer 항목 체크
