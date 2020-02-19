@@ -31,3 +31,5 @@ public class ArrayEx {
 		System.out.println("----------");
 	}
 }
+
+//ctrl+a 전체드래그 
