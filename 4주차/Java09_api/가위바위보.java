@@ -22,40 +22,41 @@ public class RandomQuiz {
 			}
 			int com=(int)((Math.random()*3)+1);//1~3	
 			System.out.println();
-			if(user==1) {System.out.println("유저는 가위입니다!");}
-			if(user==2) {System.out.println("유저는 바위입니다!");}
-			if(user==3) {System.out.println("유저는 보입니다!");}
+			if(user==1) {System.out.print("[유저] : 가위   VS");}
+			if(user==2) {System.out.print("[유저] : 바위   VS");}
+			if(user==3) {System.out.print("[유저] : 보   VS");}			
+			if(com==1) {System.out.print("  가위 : [컴퓨터]");}
+			if(com==2) {System.out.print("  바위 : [컴퓨터]");}
+			if(com==3) {System.out.print("  보 : [컴퓨터]");}
 			System.out.println();
-			if(com==1) {System.out.println("컴퓨터는 가위입니다!");}
-			if(com==2) {System.out.println("컴퓨터는 바위입니다!");}
-			if(com==3) {System.out.println("컴퓨터는 보입니다!");}
 			System.out.println();
 			
 			
 			if(user==com) {
-				System.out.println("[결과] : 무승부입니다!!");
+				System.out.println("[결과] : =====무승부입니다=====");
 			}
 			else {
 				if((com-user)==1||user-com==2) {
-					System.out.println("[결과] : 컴퓨터 승!!");
+					System.out.println("[결과] : =====컴퓨터 승======");
 				}
 				if((user-com)==1||com-user==2) {
-					System.out.println("[결과] : 유저 승!!");					
+					System.out.println("[결과] : =====유저 승======");					
 				}
 			}
 			while(true) {
+				System.out.println();
 				System.out.println("한판더 하시겠습니까?(y/n)");
 				char temp=sc.next().charAt(0);
 				if(temp=='y') {continue out;}
 				else if(temp=='n') {
-					System.out.println("++++++종료++++++");
+					System.out.println("+++++++종료+++++++");
 					break out;
 				}
 				else {
-					System.out.println("++++++에러++++++");
+					System.out.println("+++++++에러++++++++");
 					continue;
 				}
 			}
-	}
+	}		
 }
 }
