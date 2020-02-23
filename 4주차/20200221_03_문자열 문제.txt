@@ -1,0 +1,24 @@
+		System.out.println("\n---toLowerCase()-------");
+		// str1 문자열을 모두 소문자로 변환하여 리턴
+		
+		System.out.println("\n---toUpperCase()-------");
+		// str2 문자열을 모두 대문자로 변환하여 리턴
+		
+		System.out.println("\n---charAt-------");
+		// "Hello Java"에서 J 값 얻어서
+		// char변수 ch에 저장, 출력 (charAt)
+		
+		System.out.println("\n---concat-------");
+		// str1에 ", HIHIHI" 라는 문자열 추가하고 출력
+
+		System.out.println("\n---replace-------");
+		// str1의 'A'을 'a'로 변환
+				
+		System.out.println("\n---replace-------");
+		// str1에서 "ple"를 "PLE"로 변환
+		
+		System.out.println("\n---substring-------");
+		// str1에서 "pl" 찾아서 출력 (substring)
+		
+		System.out.println("\n---contains-------");
+		// str1에 "pP"가 있는지 판별
