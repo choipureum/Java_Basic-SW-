@@ -119,4 +119,13 @@ public class Collection01_ArrayList {
 //
 //	+LinkedList
 //	양방향 포인터
+//	-수정과 산제, 중간삽입에 적절하다, 효율적이다
+
 //	+Vector
+//	 -ArrayList와 동일한 기능을 수행한다
+//	 -동기화 처리되어있다
+//	 -Thread-Safe하다(StringBuffer, StringBuilder차이)
+//		**Thread-Safe
+//		  -멀티스레딩 환경에서 여러 스레드에 동시에 영향을 받아도 의도한대로 동작하는가(동기화처리되어있다)
+
+
