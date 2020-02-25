@@ -118,5 +118,5 @@ public class Collection01_ArrayList {
 //	
 //
 //	+LinkedList
-//
+//	양방향 포인터
 //	+Vector
