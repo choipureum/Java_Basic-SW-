@@ -110,6 +110,12 @@ public class Collection01_ArrayList {
 //< interface List의 구현체 >
 //
 //	+ArrayList
+
+//	:단순 연결 리스트
+//	배열과 거의 비슷한 동작을 하는 클래스
+//	배열과 달리 공간의 크기를 확장하거나 축소할 수 없다
+//	빠른편이다 (배열에 비해서 크게 느리지 않은편)
+//	
 //
 //	+LinkedList
 //
