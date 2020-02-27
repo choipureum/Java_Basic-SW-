@@ -9,6 +9,7 @@ public class Collection01_ArrayList {
 		//자료구조에서 자주 사용되는 동작(로직, 알고리즘)
 		
 		//CRUD 작업
+
 		//Create -추가/삽입
 		//Read   -조회/탐색
 		//Update -수정/변경
