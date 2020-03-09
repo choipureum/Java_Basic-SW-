@@ -12,9 +12,6 @@ public class Lotto {
 		
 		while(set.size()!=6) {
 			int temp=(int)(Math.random()*45+1);
-			if(set.contains(temp)) {
-				continue;
-			}
 			set.add(temp);
 		}
 		List list = new ArrayList(set);
