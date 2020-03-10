@@ -70,3 +70,13 @@ public class Collection06_Properties {
 		
 	}
 }
+
+//< class Properties >
+//- Hashtable 하위 클래스
+//- key,value의 데이터타입이 String으로 제한되어 있음(String)만 넣을 수 있다
+//
+//	- 프로그램의 옵션정보, 데베 연결 정보, 다국어정보(Locale) 등등 
+// 설정파일을 프로그램이 읽고 저장할 때 사용할 수 있게 해준다
+//(동적 저장은 프로그램이 종료되면 모두 데이터가 날아가버리는데 이같은 단점해결)
+//
+//-주로 .properties 확장자를 가진다
