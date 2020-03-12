@@ -23,3 +23,15 @@ class ThrowTest2{
 		throw new IOException();
 	}
 }
+//< 예외 떠넘기기, 예외처리 미루기, throws >
+
+//  - 사용법
+//	: throws 예외클래스명;
+  //- 대부분 CheckedException이다(반드시 처리해줘야하는 Exception)
+
+//	[접근제한자][식별자][리턴타입]메소드명(매개변수)throws 예외클래스{
+//		//예외발생 코드 포함 작성
+//		}
+//
+  //- throws가 적용된 메소드를 호출할 때 try-catch 구문을 이용한 예외처리가 필요하다
+//  - 예외처리를 하지 않으면 대부분 에러가 발생한다
