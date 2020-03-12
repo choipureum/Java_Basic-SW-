@@ -15,3 +15,17 @@ public class Exception_06_throw {
 		}
 	}
 }
+//< 예외를 발생시키기, throw 키워드 > 
+
+//   - 개발자가 직접 예외를 발생시키기 위해 사용하는 키워드
+   
+//	+사용법
+	 
+//	 -throw 예외객체;
+//	 -throw new 예외 클래스();
+	 
+//	ex) Exception e = new Exception(); //예외 객체 생성
+//	    throw e; //예외발생
+//
+//	ex) throw new NullPointerException(); //생성하고 바로 발생시키기
+
