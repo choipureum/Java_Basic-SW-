@@ -34,6 +34,6 @@ public class FileInputStreamEx_01 {
 			}
 		}
 		System.out.println("입력받은 길이 : "+len);
-		System.out.println(sb);
+		System.out.println(sb); 
 	}
 }
