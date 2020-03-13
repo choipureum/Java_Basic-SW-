@@ -8,7 +8,7 @@ public class InputStreamEx_02 {
 		
 		int in=-1;
 		StringBuilder sb = new StringBuilder(); //입력받은 데이터 저장소
-		
+		 
 		try {
 			//만약에 read를 수행했다면 in이 -1리가 없다 입력이 되면 while을 빠져나옴
 			while((in=is.read())!=-1) {
