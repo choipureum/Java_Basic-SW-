@@ -16,6 +16,7 @@ public class OutputStreamEx_03 {
 		b[len++] = '\n';
 		b[len++] = 'H';
 		b[len++] = 'i';
+		b[len++] = '!';
 		b[len++] = '\n';
 		
 		try {
