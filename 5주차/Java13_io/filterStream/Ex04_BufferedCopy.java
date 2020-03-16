@@ -30,6 +30,8 @@ public class Ex04_BufferedCopy {
 				bos.write(str.getBytes());
 				bos.flush();
 				total+=len;
+				//bos.write(buf,0,len)
+				//bos.flush(); 이방법도 있음
 			}
 		}catch(FileNotFoundException e) {
 			e.printStackTrace();
