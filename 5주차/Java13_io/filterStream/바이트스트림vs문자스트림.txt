@@ -1,0 +1,27 @@
+< 스트림 종류 >
+  
+	바이트 스트림(주)	문자스트림
+	--------------------------------------
+	InputStream		Reader
+	OutputStream 		Writer
+
+	FileInputStream		FileReader
+	FileOutputStream	FileWriter
+	
+	BufferedInputStream	BufferedReader
+	BufferedOutputStream	BufferedWriter
+	--------------------------------------
+	바이트 스트림만 존재(직렬화하면 바이트단위로 쪼개기때문에 문자스트림 필요X)
+	DataInputStream 
+	DataOutputStream 
+
+	ObjectInputStream 
+	ObjectOutputStream 
+	--------------------------------------
+	바이트 스트림 -> 문자 스트림 변환
+	InputStreamReader 
+	OutputStreamWriter
+	--------------------------------------
+	문자 출력 스트림
+	PrintWriter
+	
