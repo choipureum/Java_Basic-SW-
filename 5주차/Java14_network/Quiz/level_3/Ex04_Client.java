@@ -4,33 +4,22 @@ import java.net.*;
 import java.util.*;
 
 
-public class Server {
+public class Client {
 	public static void main(String[] args) {
-		ServerSocket serv = null;
 		Socket sock = null;
-		BufferedReader in =null;
-		File file=new File("./src/network/data.txt"); //입력
-		FileWriter out =null;
-		//보조스트림
+		PrintWriter out=null;
+		File file = new File("./src/network/data.txt");
+		FileReader in=null;
 		char [] c = new char[1024];
-		int len =0;
+		int len=0;
+		
 		try {
-			serv = new ServerSocket(10001);
-			sock = serv.accept();
-			String str="";
-			//Remote정보 출력
-			InetAddress ip = sock.getInetAddress();
-			System.out.println("+ + + 클라이언트 정보 + + +");
-			System.out.println("IP 정보 : "+ip.getHostAddress());
-			System.out.println("Port정보 : "+sock.getPort());
-			System.out.println("+ + + + + + + + + + + + + +");
-			
-			in= new BufferedReader(new InputStreamReader(sock.getInputStream()));
-			out = new FileWriter("./src/network/receive.txt",true); //받기
-			
-			while((len = in.read(c))!=-1) {
-				out.write(c,0,len);				
-			}			
+			sock= new Socket("localhost",10001);
+			in = new FileReader(file);
+			out = new PrintWriter(sock.getOutputStream(),true);
+			while((len=in.read(c))!=-1) {
+				out.write(c,0,len);
+			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally {
@@ -40,31 +29,25 @@ public class Server {
 				if(sock!=null)sock.close();
 			}catch(Exception e) {
 				e.printStackTrace();
-			}
 			
+			}
 		}
 	}
 }
 //-------------------------
-//class Ex04_Server
+//class Ex04_Client
 //-------------------------
-//- serv : ServerSocket
 //- sock : Socket
-//- in : BufferedReader
+//- out : PrintWriter
 //- file : File
-//- out : FileWriter
+//- in : FileReader
 //-------------------------
-//1. serv 생성
-//2. Listen 및 sock 생성
-//3. Remote 정보 출력
-// IP정보 : InetAddress
-// Port정보 : sock
-//4. in 생성
-// 네트워크 입력스트림
-//5. out 생성
-// 파일 출력 스트림
-//6. 파일 받아서 저장
+//1. sock 생성
+//2. in 생성
+// 파일 입력 스트림
+//3. out 생성
+// 네트워크 출력스트림
+//4. 파일 읽어서 보내기
 // read(char[])
 // write(char[], int, int)
-//7. close() 적절히
-//
+//5. close() 적절히
