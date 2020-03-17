@@ -30,7 +30,8 @@ public class Server {
 			
 			while((len = in.read(c))!=-1) {
 				out.write(c,0,len);				
-			}			
+			}	
+			out.flush();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}finally {
